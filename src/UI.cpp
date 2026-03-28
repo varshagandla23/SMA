@@ -1,10 +1,9 @@
-// UI implementation 
 #include "UI.h"
 #include <iostream>
 
 void UI::run() {
     DataLoader loader;
-    auto prices = loader.loadPrices("data/sample_prices.csv");
+    auto prices = loader.loadPrices("../data/sample_prices.csv"); // <-- note path
 
     StockAnalyzer analyzer;
     std::cout << "Moving Average (3-day): " 
